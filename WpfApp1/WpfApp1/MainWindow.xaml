@@ -1,0 +1,289 @@
+﻿<Window x:Class="Final.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Final"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="827">
+    <Grid Margin="0,2,0,-2">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+
+            <ImageBrush ImageSource="C:\Users\Win10\Desktop\FİNAL\WpfApp1\img.jpg"/>
+
+
+        </Grid.Background>
+        <ListBox x:Name="pizzacesit" Margin="55,96,665,40" Foreground="#FFDEEE33" BorderThickness="3,4,3,4" IsTextSearchEnabled="False">
+            <ListBox.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF570D0D" Offset="1"/>
+                </LinearGradientBrush>
+            </ListBox.BorderBrush>
+            <ListBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF0F0F33" Offset="1"/>
+                </LinearGradientBrush>
+            </ListBox.Background>
+        </ListBox>
+        <ListBox x:Name="boyut" Margin="179,96,545,40" Foreground="#FFDEEE33" BorderThickness="3,4,3,4" SelectionChanged="boyut_SelectionChanged">
+            <ListBox.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF570D0D" Offset="1"/>
+                </LinearGradientBrush>
+            </ListBox.BorderBrush>
+            <ListBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF0F0F33" Offset="1"/>
+                </LinearGradientBrush>
+            </ListBox.Background>
+        </ListBox>
+        <ListBox x:Name="fiyat" Margin="309,100,415,40" Foreground="#FFDEEE33" BorderThickness="3,4,3,4">
+            <ListBox.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF570D0D" Offset="1"/>
+                </LinearGradientBrush>
+            </ListBox.BorderBrush>
+            <ListBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF0F0F33" Offset="1"/>
+                </LinearGradientBrush>
+            </ListBox.Background>
+        </ListBox>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="624,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Foreground="#FFDEEE32" Height="28" BorderThickness="2,3,2,3">
+            <TextBox.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF570D0D" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.BorderBrush>
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF0F0F33" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Margin="624,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Foreground="#FFDEEE32" Height="26" BorderThickness="2,3,2,3">
+            <TextBox.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF570D0D" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.BorderBrush>
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF0F0F33" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox x:Name="textBox3" HorizontalAlignment="Left" Margin="624,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" SelectionTextBrush="#FFDEEE32" Foreground="#FFDEEE32" Height="26" BorderThickness="2,3,2,3">
+            <TextBox.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF570D0D" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.BorderBrush>
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF0F0F33" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+        <Button Content="Ekle" HorizontalAlignment="Left" Margin="523,287,0,0" VerticalAlignment="Top" Width="84" RenderTransformOrigin="0.5,0.5" Click="Button_Click" Foreground="#FFDEEE32" Height="31" BorderThickness="2,3,2,3">
+            <Button.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF570D0D" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.BorderBrush>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF0F0F33" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.56"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button Content="Düzenle" HorizontalAlignment="Left" Margin="658,339,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.038,-1.148" Width="86" Foreground="#FFDEEE32" Height="31" BorderThickness="2,3,2,3" Click="Button_Click_2">
+            <Button.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF570D09" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.BorderBrush>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF0F0F33" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Label Content="Pizza Çeşidi" HorizontalAlignment="Left" Margin="515,108,0,0" VerticalAlignment="Top" Width="89" Foreground="#FFDEEE47" BorderThickness="2,3,2,3">
+            <Label.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF570D0D" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.BorderBrush>
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF0F0F33" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <Label Content="Model" HorizontalAlignment="Left" Margin="515,155,0,0" VerticalAlignment="Top" Width="89" Background="#FF0F0F47" Foreground="#FFDEEE33"/>
+        <Label Content="Model" HorizontalAlignment="Left" Margin="515,155,0,0" VerticalAlignment="Top" Width="89" Background="#FF0F0F47" Foreground="#FFDEEE33"/>
+        <Label Content="Model" HorizontalAlignment="Left" Margin="515,155,0,0" VerticalAlignment="Top" Width="89" Background="#FF0F0F47" Foreground="#FFDEEE33"/>
+        <Label Content="Model" HorizontalAlignment="Left" Margin="515,155,0,0" VerticalAlignment="Top" Width="89" Background="#FF0F0F47" Foreground="#FFDEEE33"/>
+        <Label Content="Model" HorizontalAlignment="Left" Margin="515,155,0,0" VerticalAlignment="Top" Width="89" Background="#FF0F0F47" Foreground="#FFDEEE33"/>
+        <Label Content="Boyut" HorizontalAlignment="Left" Margin="515,155,0,0" VerticalAlignment="Top" Width="89" Foreground="#FFDEEE33" BorderThickness="2,3,2,3">
+            <Label.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF570D0D" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.BorderBrush>
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF0F0F33" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <Label Content="Fiyat" HorizontalAlignment="Left" Margin="515,199,0,0" VerticalAlignment="Top" Height="33" Width="89" Foreground="#FFDEEE33" BorderThickness="2,3,2,3">
+            <Label.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF570D0D" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.BorderBrush>
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF0F0F33" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <Label x:Name="ürünkayıt" Content="Pizza Seçim" HorizontalAlignment="Left" Margin="606,54,0,0" VerticalAlignment="Top" Foreground="#FFDEEE33" Width="89" Height="34" BorderThickness="2,3,2,3">
+            <Label.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF570D0D" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.BorderBrush>
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF0F0F33" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <Button Content="Sil" HorizontalAlignment="Left" Margin="655,288,0,0" VerticalAlignment="Top" Width="89" Click="Button_Click_1" Foreground="#FFDEEE32" BorderThickness="2,3,2,3" Height="29">
+            <Button.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF570D0D" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.BorderBrush>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF0F0F33" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Label Content="Pizza Çeşidi" HorizontalAlignment="Left" Margin="62,54,0,0" VerticalAlignment="Top" Width="90" Foreground="#FFDEEE47" BorderThickness="2,3,2,3">
+            <Label.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF570D0D" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.BorderBrush>
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF0F0F33" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <Label Content="Boyut" HorizontalAlignment="Left" Margin="179,54,0,0" VerticalAlignment="Top" Width="89" Foreground="#FFDEEE33" BorderThickness="2,3,2,3">
+            <Label.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF570D0D" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.BorderBrush>
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF0F0F33" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <Label Content="Fiyat" HorizontalAlignment="Left" Margin="314,53,0,0" VerticalAlignment="Top" Height="33" Width="90" Foreground="#FFDEEE33" BorderThickness="2,3,2,3">
+            <Label.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF570D0D" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.BorderBrush>
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF0F0F33" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <Button Content="Pizzaları Getir" HorizontalAlignment="Left" Margin="523,341,0,0" VerticalAlignment="Top" Width="84" RenderTransformOrigin="0.5,0.5" Click="Button_Click1" Foreground="#FFDEEE32" Height="31" BorderThickness="2,3,2,3">
+            <Button.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF570D0D" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.BorderBrush>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF0F0F33" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.56"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+
+
+
+
+
+
+
+
+
+    </Grid>
+</Window>
